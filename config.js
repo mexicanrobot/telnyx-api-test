@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+//Exit process if no API Key found.
 if(!process.env.API_KEY) {
     console.log('No API key provided, please set one in your .env file with the key API_KEY');
     process.exit();
